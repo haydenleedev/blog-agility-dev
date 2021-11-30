@@ -1,5 +1,5 @@
 import React from "react";
-import { AgilityImage } from "@agility/nextjs"
+import { AgilityImage } from "@agility/nextjs";
 import Link from "next/link";
 
 const TextBlockWithImage = ({ module }) => {
@@ -72,6 +72,11 @@ const TextBlockWithImage = ({ module }) => {
               <span className="font-bold text-primary-500 text-sm text-center md:text-left uppercase">
                 {fields.tagline}
               </span>
+            )}
+            {fields.SubTitle && (
+              <p className="font-bold text-primary-500 text-sm">
+                {fields.SubTitle}
+              </p>
             )}
             <h2 className="font-display text-4xl font-black text-secondary-500 md:text-3xl lg:text-5xl tracking-wide text-center mt-4 lg:leading-tight md:text-left">
               {fields.title}
